@@ -1,50 +1,46 @@
 .btn {
   background: none;
-  outline: transparent;
   border: none;
-  cursor: pointer;
-  color: var(--clr-neutral-100);
-  font-family: inherit;
-  text-align: center;
-  display: inline-block;
-  padding: 0.75rem 3rem;
-  font-weight: var(--fw-600);
+  text-decoration: none;
+  padding: 0.75em 1.875em;
   border-radius: var(--radius-400);
-  transition: 0.2s ease;
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid transparent;
 }
 
-.primary {
-  background: var(--clr-accent-400);
+.btn:hover {
+  text-decoration: none;
 }
 
-.primary:hover {
-  background: var(--clr-accent-500);
-  color: var(--clr-neutral-100);
+.large {
+  padding: 1em 2em;
 }
 
-.primary:focus-visible {
-  box-shadow: 0 0 1px 1px var(--clr-accent-100);
+.primary,
+.darkPrimary:hover {
+  background: var(--clr-primary-400);
+  color: white;
 }
 
-.secondary {
-  background: var(--clr-secondary-400);
-  color: var(--clr-neutral-100);
+.primary:hover,
+.darkPrimary {
+  color: white;
+  background: var(--clr-primary-600);
 }
 
-.secondary:hover {
-  background: var(--clr-secondary-300);
-  color: var(--clr-neutral-100);
+.lightSecondary {
+  color: black;
+  background: white;
+  border-color: black;
 }
 
-.secondary:focus-visible {
-  box-shadow: 0 0 1px 1px var(--clr-secondary-100);
-}
-
-.btnGroup {
-  display: flex;
-  gap: 1rem;
+.lightSecondary:hover {
+  color: white;
+  background: black;
 }

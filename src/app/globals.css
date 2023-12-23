@@ -5,12 +5,31 @@ html {
 
 :root {
   --clr-primary-400: hsl(216, 98%, 48%);
-  --clr-primary-500: hsl(216, 98%, 35%);
+  --clr-primary-600: hsl(216, 98%, 35%);
+  --clr-primary-900: hsl(216, 98%, 10%);
+
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-550: 1.5rem;
+  --fs-600: 2rem;
+  --fs-700: 2.5rem;
+  --fs-900: 4rem;
+
+  --radius-300: 0.1875em;
+  --radius-400: 0.3125em;
+  --radius-500: 0.4em;
+  --radius-600: 0.5em;
 }
 
 ::selection {
   background: var(--clr-primary-400);
   color: white;
+}
+
+body {
+  color: black;
+  font-size: var(--fs-400);
 }
 
 a {
@@ -21,12 +40,39 @@ a {
 a:hover {
   text-decoration: underline;
   text-underline-offset: 0.4rem;
-  color: var(--clr-primary-500);
+  color: var(--clr-primary-600);
 }
 
 /* Utility Classes */
 .container {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
+}
+
+.even-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.color-accent {
+  color: var(--clr-primary-400);
+}
+
+.color-heading {
+  color: var(--clr-primary-900);
+}
+
+@media screen and (max-width: 48em) {
+  :root {
+    --fs-500: 1.15rem;
+    --fs-550: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 2rem;
+    --fs-900: 2.5rem;
+  }
+
+  .even-columns {
+    grid-template-columns: 1fr;
+  }
 }

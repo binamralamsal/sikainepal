@@ -1,0 +1,50 @@
+.btn {
+  background: none;
+  outline: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-neutral-100);
+  font-family: inherit;
+  text-align: center;
+  display: inline-block;
+  padding: 0.75rem 3rem;
+  font-weight: var(--fw-600);
+  border-radius: var(--radius-400);
+  transition: 0.2s ease;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  background: var(--clr-accent-400);
+}
+
+.primary:hover {
+  background: var(--clr-accent-500);
+  color: var(--clr-neutral-100);
+}
+
+.primary:focus-visible {
+  box-shadow: 0 0 1px 1px var(--clr-accent-100);
+}
+
+.secondary {
+  background: var(--clr-secondary-400);
+  color: var(--clr-neutral-100);
+}
+
+.secondary:hover {
+  background: var(--clr-secondary-300);
+  color: var(--clr-neutral-100);
+}
+
+.secondary:focus-visible {
+  box-shadow: 0 0 1px 1px var(--clr-secondary-100);
+}
+
+.btnGroup {
+  display: flex;
+  gap: 1rem;
+}

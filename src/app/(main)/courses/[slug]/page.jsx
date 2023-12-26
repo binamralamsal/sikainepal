@@ -34,7 +34,7 @@ export default async function Page(props) {
   const user = await currentUser();
   const course = await Course.findOne({ slug: props.params.slug });
   const courseEnrolled = await User.exists({
-    _id: user.id,
+    _id: user?.id,
     coursesEnrolled: course._id,
   });
   const enrolledUsersCount = await User.countDocuments({

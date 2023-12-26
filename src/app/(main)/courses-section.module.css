@@ -1,0 +1,18 @@
+.coursesSectionWrapper {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.courseHeader {
+  text-align: center;
+}
+
+.courseTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.caption {
+  color: var(--clr-neutral-200);
+  margin-bottom: 3rem;
+}

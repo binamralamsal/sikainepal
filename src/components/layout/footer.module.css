@@ -1,0 +1,5 @@
+.footerWrapper {
+  text-align: center;
+  padding: 2rem;
+  background: var(--clr-primary-100);
+}

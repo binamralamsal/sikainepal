@@ -3,13 +3,14 @@ import styles from "./button.module.css";
 
 export function Button({
   children,
+  className,
   href,
   variant = "primary",
   size = "default",
   ...restProps
 }) {
   const commonProps = {
-    className: `${styles.btn} ${styles[variant]} ${styles[size]}`,
+    className: `${styles.btn} ${styles[variant]} ${styles[size]} ${className}`,
   };
 
   if (href)

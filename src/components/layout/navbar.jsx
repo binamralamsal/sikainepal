@@ -97,6 +97,15 @@ export function Navbar() {
             </li>
             <SignedIn>
               <li>
+                <Link
+                  className={styles.navLink}
+                  href="/dashboard"
+                  onClick={handleToggleNavbar}
+                >
+                  Dashboard
+                </Link>
+              </li>
+              <li>
                 <UserButton afterSignOutUrl="/" />
               </li>
             </SignedIn>

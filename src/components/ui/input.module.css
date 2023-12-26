@@ -1,0 +1,16 @@
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-500);
+  outline: transparent;
+  border: 2px solid var(--clr-neutral-100);
+  width: 100%;
+}
+
+.input:focus {
+  /* border-color: var(--clr-neutral-300); */
+  border-color: var(--clr-primary-400);
+}
+
+.input {
+  resize: vertical;
+}

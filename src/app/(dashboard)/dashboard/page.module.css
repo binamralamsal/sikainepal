@@ -1,0 +1,45 @@
+.mainWrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sideBtn {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.authorSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorCourses {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.authorCourses li a {
+  padding: 1rem;
+  border: 1px solid var(--clr-neutral-100);
+  border-radius: var(--radius-600);
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: 0.2s;
+}
+
+.authorCourses li a:hover {
+  box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
+}

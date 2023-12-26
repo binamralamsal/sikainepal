@@ -4,9 +4,15 @@ html {
 }
 
 :root {
-  --clr-primary-400: hsl(216, 98%, 48%);
-  --clr-primary-600: hsl(216, 98%, 35%);
-  --clr-primary-900: hsl(216, 98%, 10%);
+  /* color: hsl(26, 45%, 49%); */
+  --clr-primary-100: hsl(26, 45%, 90%);
+  --clr-primary-400: hsl(26, 45%, 48%);
+  --clr-primary-600: hsl(26, 45%, 35%);
+  --clr-primary-900: hsl(26, 45%, 10%);
+
+  --clr-neutral-100: hsl(0, 0%, 80%);
+  --clr-neutral-200: hsl(0, 0%, 53%);
+  --clr-neutral-300: hsl(0, 0%, 30%);
 
   --fs-300: 0.875rem;
   --fs-400: 1rem;
@@ -61,6 +67,30 @@ a:hover {
 
 .color-heading {
   color: var(--clr-primary-900);
+}
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 70rem) {
+  .courseGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .courseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .courseGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 48em) {

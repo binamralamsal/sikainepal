@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { ClerkProvider, currentUser } from "@clerk/nextjs";
 import NextTopLoader from "nextjs-toploader";
+import { Footer } from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default async function RootLayout({ children }) {
           <NextTopLoader />
           <Navbar />
           {children}
+          <Footer />
         </body>
       </html>
     </ClerkProvider>

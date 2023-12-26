@@ -22,6 +22,10 @@
   padding: 1em 2em;
 }
 
+.small {
+  padding: 0.3em 1em;
+}
+
 .primary,
 .darkPrimary:hover {
   background: var(--clr-primary-400);

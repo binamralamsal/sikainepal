@@ -1,11 +1,10 @@
 .heroContainer {
-  padding: 10rem 1rem;
+  padding: 8rem 1rem;
+  align-items: center;
 }
 
 .heroContainer img {
-  position: relative;
-  top: -106px;
-  right: -50px;
+  height: auto;
 }
 
 .preTitle {

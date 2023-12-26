@@ -1,0 +1,29 @@
+.formWrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.control {
+  padding: 0.5rem 0;
+}
+
+.control label {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.addBtn {
+  margin-top: 1rem;
+}
+
+.inputGroups {
+  gap: 1rem;
+}
+
+@media screen and (max-width: 60rem) {
+  .inputGroups {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

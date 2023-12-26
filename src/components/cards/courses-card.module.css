@@ -1,0 +1,39 @@
+.courseCard {
+  padding: 1rem;
+  border-radius: var(--radius-600);
+  border: 1px solid var(--clr-neutral-100);
+  transition: 0.2s;
+  color: black;
+}
+
+.featuredImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-500);
+}
+
+.courseCard:hover {
+  box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
+  color: black;
+  text-decoration: none;
+}
+
+.courseDetails {
+  padding-top: 1rem;
+}
+
+.courseTitle {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.authorName {
+  color: var(--clr-neutral-200);
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--clr-neutral-300);
+}

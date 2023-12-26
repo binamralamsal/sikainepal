@@ -4,9 +4,7 @@ import styles from "./navbar.module.css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { SignInButton, UserButton } from "@clerk/nextjs";
-import { SignedIn } from "@clerk/nextjs";
-import { SignedOut } from "@clerk/nextjs";
+import { UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -84,7 +82,7 @@ export function Navbar() {
                 href="/about"
                 onClick={handleToggleNavbar}
               >
-                About{" "}
+                About
               </Link>
             </li>
 
@@ -105,10 +103,22 @@ export function Navbar() {
 
             <SignedOut>
               <li>
-                <SignInButton
+                <Link
+                  className={styles.navLink}
+                  href="/sign-in"
                   onClick={handleToggleNavbar}
-                  className={styles.signInBtn}
-                ></SignInButton>
+                >
+                  Sign In
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={styles.navLink}
+                  href="/sign-up"
+                  onClick={handleToggleNavbar}
+                >
+                  Sign Up
+                </Link>
               </li>
             </SignedOut>
           </ul>
